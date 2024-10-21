@@ -21,7 +21,7 @@ const Intro = () => {
       </div>
 
       {/* Right Side - Image */}
-      <div className='w-1/2 flex justify-end'>
+      <div className='w-1/2 flex justify-end'> 
         <img src={bg} alt="profile" className='h-auto w-2/3 object-cover rounded-full' />
       </div>
     </section>
