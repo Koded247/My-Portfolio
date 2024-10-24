@@ -1,4 +1,5 @@
 import React from 'react'
+import { Facebook , Github, LinkedinIcon, LucideTwitter } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -36,8 +37,11 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div>
-
+      <div className='flex justify-center items-center mt-20 gap-4 cursor-pointer '>
+          <Facebook className='text-blue-800 hover:bg-gray-950' /> 
+          <Github className='hover:bg-gray-950' /> 
+          <LucideTwitter className='hover:bg-gray-950 text-blue-800' /> 
+          <LinkedinIcon className='hover:bg-gray-950 text-blue-800 ' />
       </div>
     </section>
   )

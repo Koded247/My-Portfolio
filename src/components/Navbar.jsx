@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/kodedlogo.png';
 import { Link } from 'react-scroll';
 import { MessageSquareQuote, Menu } from 'lucide-react';
 
@@ -7,9 +7,9 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className='h-20 w-screen my-0 mx-auto py-4 px-8 flex items-center justify-between sticky top-0 z-10 max-w-6xl bg-gray-600 shadow-md'>
+    <nav className='h-20 w-screen my-0 mx-auto py-4 px-8 flex items-center justify-between sticky top-0 z-10 max-w-screen-1xl bg-gray-600 shadow-md'>
       {/* Logo */}
-      <img className='w-16 h-16 object-cover' src={logo} alt="logo" />
+      <img className='w-18 h-14 object-cover rounded ' src={logo} alt="logo" />
 
       {/* Menu Button for Mobile */}
       <div className="md:hidden">

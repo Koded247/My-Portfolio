@@ -2,8 +2,8 @@ import React from 'react'
 
 const Works = () => {
   return (
-    <section>
-      <h2>My portfolio</h2>
+    <section className='text-center'>
+       <h1 className='text-yellow-700 '>My portfolio</h1>
       <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ad tenetur tempora sequi. Animi ut assumenda fugiat earum inventore ab? Fugiat vitae delectus expedita, atque voluptate inventore aperiam deleniti laudantium!</span>
       <div>
       <img src="" alt="" />
