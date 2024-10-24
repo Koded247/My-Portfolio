@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const Intro = () => {
   return (
-    <section className='w-screen max-w-6xl mx-auto h-screen flex flex-col md:flex-row items-center justify-between p-4 md:p-8'>
+    <section id='Home' className='w-screen max-w-6xl mx-auto h-screen flex flex-col md:flex-row items-center justify-between p-4 md:p-8'>
       {/* Left Side - Text */}
       <div className='flex flex-col justify-center gap-4 w-full md:w-1/2 text-center md:text-left'>
         <span className='text-3xl md:text-5xl font-semibold'>Hello,</span>

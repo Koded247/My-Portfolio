@@ -3,7 +3,7 @@ import UiDesign from '../assets/image.png';
 
 const Skill = () => {
   return (
-    <section className='max-w-6xl mx-auto my-16 p-4 md:p-8'>
+    <section id='about' className='max-w-6xl mx-auto my-16 p-4 md:p-8'>
       {/* Title Section */}
       <div className='text-center mb-8'>
         <span className='block text-3xl md:text-4xl font-bold'>What I Do</span>

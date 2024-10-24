@@ -3,7 +3,7 @@ import { Facebook , Github, LinkedinIcon, LucideTwitter } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section className=" py-16">
+    <section id='contact' className=" py-16">
       <div className="max-w-4xl mx-auto bg-gray-700 p-8 rounded-lg shadow-lg">
         
         <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-400 mb-4">Contact Me</h1>
@@ -12,20 +12,20 @@ const Contact = () => {
         </span>
         
         
-        <form action="" className="flex flex-col gap-6">
+        <form action="" className="flex flex-col gap-6 ">
           <input 
             type="text" 
             placeholder="Your Name" 
-            className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800 text-black"
+            className=" bg-transparent p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
           />
           <input 
             type="email" 
             placeholder="Your Email" 
-            className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800 text-black"
+            className="bg-transparent p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
           />
           <textarea 
             placeholder="Your Message" 
-            className="p-4 h-40 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800 resize-none text-black"
+            className="bg-transparent p-4 h-40 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none text-white"
           />
           
           
@@ -38,10 +38,10 @@ const Contact = () => {
         </form>
       </div>
       <div className='flex justify-center items-center mt-20 gap-4 cursor-pointer '>
-          <Facebook className='text-blue-800 hover:bg-gray-950' /> 
-          <Github className='hover:bg-gray-950' /> 
-          <LucideTwitter className='hover:bg-gray-950 text-blue-800' /> 
-          <LinkedinIcon className='hover:bg-gray-950 text-blue-800 ' />
+          <Facebook className='text-blue-600 hover:bg-gray-900' /> 
+          <Github className='text-blue-600  hover:bg-gray-900' /> 
+          <LucideTwitter className='hover:bg-gray-900 text-blue-600' /> 
+          <LinkedinIcon className='hover:bg-gray-900 text-blue-600 ' />
       </div>
     </section>
   )

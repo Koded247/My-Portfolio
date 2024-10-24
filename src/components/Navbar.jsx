@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import logo from '../assets/kodedlogo.png';
+import logo from '../assets/kodedLogo.png';
 import { Link } from 'react-scroll';
-import { MessageSquareQuote, Menu } from 'lucide-react';
+import { MessageSquareQuote, Menu, MailCheck } from 'lucide-react';
+import Intro from './Intro';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,16 +21,44 @@ const Navbar = () => {
 
       {/* Links and Contact Me Button (hidden on small screens) */}
       <div className={`flex-col md:flex-row md:flex gap-4 items-center absolute md:relative top-20 md:top-0 left-0 w-full md:w-auto bg-gray-600 md:bg-transparent p-4 md:p-0 md:opacity-100 transition-all ${menuOpen ? 'opacity-100' : 'opacity-0 hidden md:flex'}`}>
-        <Link className='hover:text-yellow-300 hover:pb-2 hover:border-b-4 cursor-pointer mr-4'>Home</Link>
-        <Link className='hover:text-yellow-300 hover:pb-2 hover:border-b-4 cursor-pointer mr-4'>About</Link>
-        <Link className='hover:text-yellow-300 hover:pb-2 hover:border-b-4 cursor-pointer mr-4'>Portfolio</Link>
-        <Link className='hover:text-yellow-300 hover:pb-2 hover:border-b-4 cursor-pointer mr-4'>Clients</Link>
+        <Link to="Home" 
+          smooth={true} 
+          spy={true}
+          offset={-100}
+          duration={500}
+          activeClass="text-yellow-500 border-b-4 border-yellow-500" 
+          className='hover:text-yellow-300  hover:border-b-4 cursor-pointer mr-4   '>Home</Link>
+        <Link to="about" 
+          smooth={true} 
+          spy={true} 
+          offset={-50}
+          duration={500}
+          activeClass="text-yellow-500 border-b-4 border-yellow-500"
+           className='hover:text-yellow-300  hover:border-b-4 cursor-pointer mr-4 '>About</Link>
+        <Link to="home" 
+          smooth={true} 
+          spy={true}
+          offset={-50}
+          duration={500} 
+          activeClass="text-yellow-500 border-b-4 border-yellow-500"
+           className='hover:text-yellow-300  hover:border-b-4 cursor-pointer mr-4 '>Portfolio</Link>
+        <Link to="client" 
+          smooth={true} 
+          spy={true}
+          offset={-50}
+          duration={500} 
+          activeClass="text-yellow-500 border-b-4 border-yellow-500" 
+          className='hover:text-yellow-300  hover:border-b-4 cursor-pointer mr-4 '>Clients</Link>
 
-        {/* Contact Me Button */}
-        <button className='bg-white text-sm text-black p-3 border-none rounded-3xl flex justify-center items-center gap-2 mt-4 md:mt-0'>
-          <MessageSquareQuote /> Contact Me
-        </button>
       </div>
+        {/* Contact Me Button */}
+        <button 
+           className='bg-gray-300 text-sm text-black font-medium p-3 border-none rounded-3xl flex justify-center items-center gap-2 mt-4 md:mt-0'
+           onClick={()=>{
+            document.getElementById('contact').scrollIntoView({behavior: 'smooth'} );
+           }}>
+          <MailCheck /> Contact Me
+        </button>
     </nav>
   );
 };
