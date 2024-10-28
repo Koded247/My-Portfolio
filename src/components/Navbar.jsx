@@ -7,6 +7,8 @@ import Intro from './Intro';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+
+
   return (
     <nav className='h-20 w-screen my-0 mx-auto py-4 px-8 flex items-center justify-between sticky top-0 z-10 max-w-screen-1xl bg-gray-600 shadow-md'>
       {/* Logo */}
