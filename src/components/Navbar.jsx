@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
 
       {/* Links and Contact Me Button (hidden on small screens) */}
-      <div className={`flex-col md:flex-row md:flex gap-4 items-center absolute md:relative top-20 md:top-0 left-0 w-full md:w-auto bg-gray-600 md:bg-transparent p-4 md:p-0 md:opacity-100 transition-all ${menuOpen ? 'opacity-100' : 'opacity-0 hidden md:flex'}`}>
+      <div className={`flex-col md:flex-row md:flex gap-4 items-center absolute md:relative top-20 md:top-0 left-0 w-full md:w-auto bg-gray-600 md:bg-transparent p-4 md:p-0 md:opacity-100 transition-all ${menuOpen? 'opacity-100' : 'opacity-0 hidden md:flex'}`}>
         <Link to="Home" 
           smooth={true} 
           spy={true}
