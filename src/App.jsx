@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <Intro />
       <Works />
-      <Skill />
+      {/* <Skill /> */}
       <Contact />
       <Footer />
       
