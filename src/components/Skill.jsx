@@ -6,10 +6,10 @@ const Skill = () => {
     <section id='about' className='max-w-6xl mx-auto my-16 p-4 md:p-8'>
       {/* Title Section */}
       <div className='text-center mb-8'>
-        <span className='block text-3xl md:text-4xl font-bold'>What I Do</span>
-        <span className='block text-base md:text-lg text-gray-600 mt-4'>
+        <h1 className='text-3xl md:text-4xl font-bold'>What I Do</h1>
+        <p className='text-base md:text-lg text-gray-600 mt-4'>
           I am a skilled web designer with experience in creating visually appealing and user-friendly websites. I have a strong understanding of design and a keen eye for detail. I'm proficient in HTML, CSS (Tailwind), and JavaScript, as well as using React applications.
-        </span>
+        </p>
       </div>
 
       {/* Skills Section */}
