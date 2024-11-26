@@ -8,6 +8,7 @@ const Contact = () => {
         
         <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-400 mb-4">Contact Me</h1>
         <span className="block text-lg text-gray-400 text-center mb-8">
+        <h1 className='text-2xl'>I'd love to hear your thoughts! </h1><br />
           Please fill out the form below to discuss any work opportunities
         </span>
         
